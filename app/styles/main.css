@@ -1,0 +1,544 @@
+/* ------------------- */
+/* styles for          */
+/* ryan chapel dot com */
+/* ------------------- */
+
+/* ------ save --------- */
+/* ------ the ---------- */
+/* ------ colors ------- */
+/* white: #ecf0f1;       */
+/* red: #e74c3c;         */
+/* dark red: #cf4436;    */
+/* light blue: #3498db;  */
+/* medium blue: #2980b9; */
+/* dark blue: #2c3e50;   */
+/* --------------------- */
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: 150ms all ease-in-out;
+       -moz-transition: 150ms all ease-in-out;
+         -o-transition: 150ms all ease-in-out;
+            transition: 150ms all ease-in-out;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #ecf0f1;
+    font-family: "Muli", helvetica, arial, sans-serif;
+    font-size: 1.6rem;
+    color: #444;
+    margin: 0;
+    padding: 0 10px 10px 10px;
+}
+
+.is {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    float: right;
+    font-size: 2.5rem;
+    margin: 6px 0;
+    text-shadow: 0 0 5px #fff;
+    text-transform: lowercase;
+}
+
+    .scrolled h1 {
+        margin: 6px 0;
+    }
+
+h2 {
+    margin: 0 0 10px;
+}
+
+h3 {
+    margin: 40px 0 10px;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+h4:before,
+h4:after {
+    content: '~';
+}
+
+p {
+    line-height: 2.5rem;
+    margin: .75rem 0;
+    max-width: 850px;
+}
+
+p.lead {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header {
+    background: #ecf0f1;
+    margin: 0 auto;
+    max-width: 140rem;
+    overflow: hidden;
+    position: fixed;
+    width: calc(100% - 20px);
+}
+
+.chapel {
+    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 20px;
+    padding: 10px 20px 0;
+}
+
+.logo {
+    float: left;
+    max-width: 60px; /* IE8 fallaback */
+    max-width: 6rem;
+    position: fixed;
+    z-index: 1;
+}
+
+    .logo:hover {
+        -webkit-transform: scale( 1.2, 1.2 ) rotate( -5deg );
+           -moz-transform: scale( 1.2, 1.2 ) rotate( -5deg );
+            -ms-transform: scale( 1.2, 1.2 ) rotate( -5deg );
+             -o-transform: scale( 1.2, 1.2 ) rotate( -5deg );
+                transform: scale( 1.2, 1.2 ) rotate( -5deg );
+    }
+
+    .scrolled .logo {
+        -webkit-transform: scale( .5, .5 ) translate( -30px, 0 );
+           -moz-transform: scale( .5, .5 ) translate( -30px, 0 );
+            -ms-transform: scale( .5, .5 ) translate( -30px, 0 );
+             -o-transform: scale( .5, .5 ) translate( -30px, 0 );
+                transform: scale( .5, .5 ) translate( -30px, 0 );
+    }
+
+nav {
+    clear: both;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+    .scrolled nav {
+        padding: 10px 0 10px;
+    }
+
+nav > ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul > a {
+    display: inline-block;
+    margin: 0 0 10px 3%;
+}
+
+    nav > ul > a:first-child {
+        margin-left: 0;
+    }
+
+nav > ul > a,
+.bio a {
+    background: #3498db;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 3px 2px 3px; 
+}
+
+nav > ul > a:hover,
+.bio a:hover,
+nav > ul > a.active,
+.bio a.active {
+    background: #2980b9;
+    color: #fff;
+}
+
+.coolest {
+    background: #fff;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: 0 auto;
+    max-width: 140rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.web {
+    margin: 140px auto 0;
+    max-width: 1000px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+    a:hover,
+    a:active {
+        color: #2980b9;
+    }
+
+    a.highlight {
+        background: #e74c3c;
+        /*display: none;*/
+    }
+
+    a.highlight:hover {
+        background: #cf4436;
+    }
+
+aside {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section {
+    border-top: 2px solid #ecf0f1;
+    line-height: 2.5rem;
+    max-width: 850px;
+    padding: 20px 0;
+}
+
+    section:first-of-type {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    section ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    section.facts  ul{
+        list-style-type: circle;
+        padding: 20px;
+    }
+
+    section.facts li {
+        margin-bottom: 20px;
+    }
+
+.content-list > a {
+    border-top: 2px solid #ecf0f1;
+    display: block;
+    padding: 10px 0;
+}
+    
+    .content-list > a:first-child {
+        border-top: none;
+    }
+
+    .content-list > a:hover {
+
+    }
+
+.content-list .title {
+    font-size: 2rem;
+}
+
+.content-list .description {
+    color: #333;
+}
+
+    .content-list > a:hover .description {
+        color: #2980b9;
+    }
+
+.date {
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.download {
+    float: right;
+}
+
+.info {
+    background: #2c3e50;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 5px;
+    margin-top: 40px;
+}
+
+    .info:first-of-type {
+        margin-top: 0;
+    }
+
+.bio {
+    background: #2c3e50;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.4rem;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.bio img {
+    border-radius: 3px;
+    float: left;
+    margin: 0 10px 0 0;
+    max-width: 90px;
+}
+
+.bio p {
+    display: inline;
+    line-height: 2.2rem;
+}
+
+.words {
+    margin-top: -6px;
+}
+
+.bio p.find-me {
+    display: block;
+    margin-bottom: 0;
+}
+
+a.social-links {
+    margin-bottom: 5px;
+}
+
+a.linkedin:hover {
+    background: #0976b4;
+}
+
+a.github:hover {
+    background: #333;
+}
+
+a.twitter:hover {
+    background: #55acee;
+}
+
+a.flickr:hover {
+    background: #ff0084;
+}
+
+a.youtube:hover {
+    background: #cd201f;
+}
+
+a.googleplus:hover {
+    background: #dd4b39;
+}
+
+footer {
+    font-size: 1.4rem;
+    margin: 10px auto;
+    max-width: 140rem;
+    padding: 0;
+}
+
+@media (min-width: 320px) {
+
+    h1 {
+        text-shadow: none;
+    }
+
+    nav > ul > a {
+        margin: 0 0 0 3%;
+    }
+
+    nav > ul > a,
+    .bio a {
+        padding: 1px 3px 0 3px; 
+    }
+
+    .web {
+        margin: 120px auto 0;
+    }
+
+    .bio p {
+        line-height: 2.4rem;
+    }
+
+}
+
+@media (min-width: 400px) {
+    
+    body {
+        padding: 0 20px 20px 20px;
+    }
+
+    header {
+        width: calc(100% - 40px);
+    }
+
+    .coolest {
+        padding: 20px;
+    }
+
+    .chapel {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin: 10px 0;
+        max-width: 10rem;
+    }
+
+        .scrolled .logo {
+            -webkit-transform: scale( .65, .65 ) translate( -30px, -30px );
+               -moz-transform: scale( .65, .65 ) translate( -30px, -30px );
+                -ms-transform: scale( .65, .65 ) translate( -30px, -30px );
+                 -o-transform: scale( .65, .65 ) translate( -30px, -30px );
+                    transform: scale( .65, .65 ) translate( -30px, -30px );
+        }
+
+    h1 {
+        margin: 31px 0;
+    }
+
+    nav,
+    .scrolled nav {
+        padding: 20px 0 10px;
+    }
+
+    .web {
+        margin: 170px auto 0;
+    }
+
+    p,
+    section {
+        line-height: 2.75rem;
+    }
+
+    nav > ul > a,
+    .bio a {
+        padding: 3px 5px;
+    }
+
+    p {
+        line-height: 3rem;
+        max-width: 850px;
+    }
+
+    footer {
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 430px) {
+
+    a.social-links {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 600px) {
+    
+    nav {
+        padding: 0 0 10px;
+        text-align: right;
+    }
+
+    nav > ul > a {
+        margin-left: 3%;
+    }
+
+}
+
+@media ( min-width: 850px) {
+    
+    body {
+        padding: 20px 5%;
+    }
+
+    body:after {
+        content: 'large';
+        opacity: 0;
+    }
+
+    header {
+        position: static;
+        width: auto;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .chapel {
+        margin-top: 0;
+    }
+
+    .web {
+        margin: 0 auto;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .logo {
+        margin: 10px 0 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 25px 0;
+    }
+
+    nav {
+        padding: 0 0 30px;
+    }
+    
+    .web {
+        float: left;
+        margin-right: 5%;
+        width: 70%;
+    }
+
+    .developer {
+        float: left;
+        width: 25%;
+    }
+
+    .words {
+        margin-top: 0;
+    }
+
+    .bio p {
+        display: inline-block;
+        line-height: 3rem;
+    }
+
+    .bio p.me {
+        display: inline;
+        font-size: 1.9rem;
+        margin-top: 0;
+    }
+
+    a.social-links {
+        display: inline;
+    }
+}
+
+@media (min-width: 1054px) {
+    .bio p.me {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1276px) {
+    .bio p.me {
+        line-height: 6rem;
+    }
+}
