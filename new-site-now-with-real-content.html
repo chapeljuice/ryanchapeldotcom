@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>New site! Now with *REAL* content!</title>
+        <meta name="author" content="Ryan Chapel" />
+        <meta name="twitter:site" content="@chapeljuice" />
+        <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- include fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        <!-- include styles -->
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+            
+        <header class="ryan">
+
+            <div class="chapel">
+                <a href="index.html"><img src="images/ryanchapel-logo-red.svg" class="logo" alt="website logo" /></a>
+
+                <div class="is"><h1 title="...is the coolest.">Ryan Chapel.</h1></div>
+
+                <nav class="the">
+                    <ul>
+                        <a href="resume.html">
+                            <li>Resum&eacute;</li>
+                        </a>
+                        <a href="about.html">
+                            <li>About me</li>
+                        </a>
+                        <a href="mailto:ryan.chapel@gmail.com?subject=For hire inquiry" class="highlight">
+                            <li>Hire me!</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div class="coolest">
+
+            <div class="web">
+
+                <section>
+                    <article>
+                        <h2>New site! Now with *REAL* content!</h2>
+                        <span class="date">May 12, 2014</span>
+
+                        <img src="images/boom-code-shot.gif" alt="Source code of ryanchapel.com" class="boom" />
+
+                        <p class="lead">For the longest time ryanchapel.com was basically just my name and some contact info. I've finally taken the time to build something that I think is nice, and also put some content on here that I *should* be updating regularly!</p>
+
+                        <p class="lead">All that being said, let's talk about the site a bit:</p>
+
+                        <h3>RWD - Responsive Web Design</h3>
+                        <p>Everybody's favorite. I guess my last design was technically responsive, althogh nothing really moved around that much or behaved differently at different browser widths. This time I've taken the time to develop the site using the mobile first approach&mdash;that is, start with designing / developing the mobile experience, and then get wider and wider until it looks good at my maximum width (which I set to <code>140rem</code>, but we'll get to that in a second).</p>
+
+                        <p>I tried to get away from using 'px' units for everything this time, and so I'm using mostly 'rem' units (for widths at least). Rem units are great because they're based off of your root size. For example, most browsers default their font-size to <code>16px</code>. I set my font-size on my <code>html</code> element to be <code>62.5%</code>, which (if you do the math) works out to be 10px. This keeps everything simple and straightforward, and so now whenever I need to specify something that's around 14px I'd just use <code>1.4rem</code>, which is 14 / 10 (the base font-size). The only drawback (if you call it that) is that this is not supported in IE8 or below. I've decided not to support those browsers, so it's not a big deal here. If you <i>were</i> to support them, all you'd have to do is declare a font-size in a different unit right above the <code>rem</code> declaration, such as <code>px</code> or <code>em</code>.</p>
+
+                        <h3>CSS Transitions / Animations</h3>
+                        <p>If you look hard enough you'll see some subtle css transitions and animations that I think add to the user's experience, but not detract from it. In large browsers it's mostly subtle hover effects, however in smaller browsers when you scroll down the logo and other elements in the header shrink and scoot up a bit so that the user has more area to view the content.</p>
+
+                        <h3>Content</h3>
+                        <p>As I stated before I'm now going to be using this website not really as a 'blog', but as a way to teach users some of my experiences and how to create cool things I've thought of or come across. My hope is that I can help someone create a better user experience for their users on their sites, and also teach a few things in the process (heck, and maybe even learn a thing or two myself!)</p>
+
+                        <p class="lead">If you have any thoughts about the new site, let me know!
+                        <br />
+                        <a href="mailto:ryan.chapel@gmail.com?subject=rcdc :: questions, comments, concerns">Questions, comments, concerns? Email me!</a></p>
+                    </article>
+                </section>
+
+            </div>
+
+            <aside class="developer">
+                
+                <div class="bio">
+                    <img src="images/me.jpg" alt="picture of site author (ryan chapel)" />
+                    <div class="words">
+                        <p class="me">I'm Ryan!</p>
+                        <p>I'm a web developer working in Seattle, specializing in responsive design, performant websites, and best practices in my code.</p>
+                        <p>I'm also a husband and father of two boys...and enjoy <a href="https://twitter.com/ChapelJuice/status/460116242255192065" target="_blank">meat</a>, <a href="https://twitter.com/ChapelJuice/status/426601118345330688" target="_blank">cocktails</a> and <a href="https://twitter.com/ChapelJuice/status/440200563481792512" target="_blank">yardwork.</a></p>
+                        <p class="find-me">You can find me on:
+                            <br />
+                            <a href="https://www.linkedin.com/in/ryanchapel" class="social-links linkedin" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/chapeljuice" class="social-links github" target="_blank">GitHub</a>
+                            <a href="https://twitter.com/ChapelJuice" class="social-links twitter" target="_blank">Twitter</a>
+                            <a href="https://www.flickr.com/photos/chapelator/" class="social-links flickr" target="_blank">Flickr</a>
+                            <a href="https://www.youtube.com/user/ChapelJuice" class="social-links youtube" target="_blank">YouTube</a>
+                            <a href="https://plus.google.com/+RyanChapel" class="social-links googleplus" target="_blank">Google+</a>
+                        </p>
+                    </div>
+                </div>
+
+            </aside>
+            
+        </div>
+
+        <footer class="ever">
+            &copy; 2014 Ryan Chapel. All rights reserved.
+        </footer>
+
+
+        <!-- include scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+        <!-- google analytics -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-1215567-1');ga('send','pageview');
+        </script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>

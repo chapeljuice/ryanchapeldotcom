@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Styling form elements for the future! - Ryan Chapel Dot Com</title>
+        <meta name="author" content="Ryan Chapel" />
+        <meta name="twitter:site" content="@chapeljuice" />
+        <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- include fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        <!-- include styles -->
+        <link rel="stylesheet" href="styles/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/forms.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/prism-default.css">
+    </head>
+    <body>
+            
+        <header class="ryan">
+
+            <div class="chapel">
+                <a href="index.html"><img src="images/ryanchapel-logo-red.svg" class="logo" alt="website logo" /></a>
+
+                <div class="is"><h1 title="...is the coolest.">Ryan Chapel.</h1></div>
+
+                <nav class="the">
+                    <ul>
+                        <a href="resume.html">
+                            <li>Resum&eacute;</li>
+                        </a>
+                        <a href="about.html">
+                            <li>About me</li>
+                        </a>
+                        <a href="mailto:ryan.chapel@gmail.com?subject=For hire inquiry" class="highlight">
+                            <li>Hire me!</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div class="coolest">
+
+            <div class="web">
+
+                <section>
+                    <article>
+                        <h2>Styling radios and checkboxes for the future!</h2>
+                        <span class="date">May 17, 2014</span>
+                        <p class="lead">Let's face it: the look of form elements hasn't really changed all that much in the past decade. Sure, some browsers and operating systems do better jobs than others, but they're all pretty ugly.</p>
+
+                        <p class="lead">Let's see how we can change that.</p>
+
+                        <h3>Radio buttons</h3>
+                        <p>Radio buttons are notoriously hard to use; mostly because they're so small. Let's make them bigger, and add a bit of design to them!</p>
+
+                        <p>Example:<br />
+                            <div class="radio one">
+                                <input type="radio" id="yes" name="question" value="yes" /><!--
+                                --><label for="yes"><i class="fa fa-square-o"></i>Yes</label><!--
+                                --><input type="radio" id="no" name="question" value="no" checked /><!--
+                                --><label for="no"><i class="fa fa-check"></i>No</label>
+                            </div>
+                        </p>
+
+                        <p>Now let's take a look at the code!</p>
+
+                        <h4>HTML</h4>
+
+                        <pre><code class="language-markup"><!--
+    -->&lt;input type="radio" id="yep" name="radio" value="yep" /&gt;
+    &lt;label for="yep"&gt;&lt;i class="fa fa-square-o"&gt;&lt;/i&gt;Yes&lt;/label&gt;
+    &lt;input type="radio" id="nope" name="radio" value="nope" checked /&gt;
+    &lt;label for="nope"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;No&lt;/label&gt;<!--
+                        --></code></pre>
+
+                        <p>The above html is pretty standard radio markup, with the addition of a couple of <code class="language-markup">&lt;i&gt;</code> tags for the icons (which we're using via <a href="http://fontawesome.io/" target="_blank">fontawesome.io</a>). The real meat of the styling is done via the...</p>
+
+                        <h4>CSS</h4>
+
+                        <pre><code class="language-css"><!--
+    -->/* first we we hide the actual inputs
+        and use the labels as our only UI */
+    .radio input {
+        display: none;
+    }
+
+    /* the most important properties on the labels
+        themselves is to set the display to inline-block,
+        and the cursor to pointer (so it behaves more
+        naturally). the rest is just color, styling and 
+        a smooth transition. */
+    .radio input + label {
+        background-color: #fff;
+        border: 2px solid #2980b9;
+        border-left: none;
+        color: #2980b9;
+        cursor: pointer;
+        display: inline-block;
+        padding: 4px 12px;
+        -webkit-transition: .1s all ease-in-out;
+           -moz-transition: .1s all ease-in-out;
+             -o-transition: .1s all ease-in-out;
+                transition: .1s all ease-in-out;
+    }
+
+    /* here we're making sure the corners are rounded
+        on only the outer corners and adding a left
+        border. */
+    .radio input + label:first-of-type {
+        border-left: 2px solid #2980b9;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    /* again, making sure the outer corners
+        are rounded (and not the inner ones). */
+    .radio input + label:last-of-type {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* adding a 'checked' and hover state */
+    .radio input:checked + label,
+    .radio input + label:hover,
+    .radio input:checked + label i { 
+        background: #2980b9;
+        color: #fff;
+    }
+
+    /* positioning the icon */
+    .radio i {
+        padding-right: 10px;
+        vertical-align: middle;
+    }<!--
+                        --></code></pre>
+
+                        <p>Well as you can see, there's not much to it. Mainly just adding colors, positioning and borders. One thing I forgot to mention is that since we're using inline-block to display the labels they'll most likely have a little space in between them that you can't really get rid of using normal techniques. <a href="http://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank">Chris Coyier from CSS-Tricks has more info on that here</a>, but what I did was just comment out the whitespace in the html between the inputs and labels. That did the trick.</p>
+
+                        <p>So lastly, there's a bit of:</p>
+
+                        <h4>JavaScript / jQuery</h4>
+
+                        <pre><code class="language-javascript"><!--
+    -->/* so I'm using jQuery here (because it's being used
+        in the project this was for), but this can easily
+        be done with vanilla JavaScript as well.*/
+    $( 'document' ).ready( function () {
+        
+        // 'on' event handler attached to the radio input
+        $( 'input' ).on( 'change', function () {
+
+            /* this is kind of ugly, but basically what this
+                says is: you clicked on this input, so change the
+                icon to the check icon, and make sure the other 
+                radio option has the 'unchecked' icon */
+            $( this )
+                .next( 'label' )
+                .children( 'i' )
+                .toggleClass( 'fa-check fa-square-o' )
+                .parent()
+                .siblings( 'label' )
+                .children( 'i' )
+                .toggleClass( 'fa-check fa-square-o' );
+
+        });
+
+    });<!--
+                        --></code></pre>
+
+                        <p>Pretty easy, yeah? Note that JavaScript isn't really needed unless you're using icons like these...and you could probably figure out a way to use different icons (background images?) without JavaScript and just using CSS selectors.</p>
+
+                        <p class="lead">Well, that's all there is to it. If you want to use checkboxes instead of radios, all you have to do is change the input 'type' to checkbox and modify your jQuery ever-so-slightly.
+                        <br /><br />
+                        <a href="mailto:ryan.chapel@gmail.com?subject=rcdc :: questions, comments, concerns">Questions, comments, concerns? Email me!</a></p>
+
+                    </article>
+                </section>
+
+            </div>
+
+            <aside class="developer">
+                
+                <div class="bio">
+                    <img src="images/me.jpg" alt="picture of site author (ryan chapel)" />
+                    <div class="words">
+                        <p class="me">I'm Ryan!</p>
+                        <p>I'm a web developer working in Seattle, specializing in responsive design, performant websites, and best practices in my code.</p>
+                        <p>I'm also a husband and father of two boys...and enjoy <a href="https://twitter.com/ChapelJuice/status/460116242255192065" target="_blank">meat</a>, <a href="https://twitter.com/ChapelJuice/status/426601118345330688" target="_blank">cocktails</a> and <a href="https://twitter.com/ChapelJuice/status/440200563481792512" target="_blank">yardwork.</a></p>
+                        <p class="find-me">You can find me on:
+                            <br />
+                            <a href="https://www.linkedin.com/in/ryanchapel" class="social-links linkedin" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/chapeljuice" class="social-links github" target="_blank">GitHub</a>
+                            <a href="https://twitter.com/ChapelJuice" class="social-links twitter" target="_blank">Twitter</a>
+                            <a href="https://www.flickr.com/photos/chapelator/" class="social-links flickr" target="_blank">Flickr</a>
+                            <a href="https://www.youtube.com/user/ChapelJuice" class="social-links youtube" target="_blank">YouTube</a>
+                            <a href="https://plus.google.com/+RyanChapel" class="social-links googleplus" target="_blank">Google+</a>
+                        </p>
+                    </div>
+                </div>
+
+            </aside>
+            
+        </div>
+
+        <footer class="ever">
+            &copy; 2014 Ryan Chapel. All rights reserved.
+        </footer>
+
+
+        <!-- include scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+        <!-- google analytics -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-1215567-1');ga('send','pageview');
+        </script>
+
+        <script src="scripts/prism-default.js"></script>
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+How to start up a Yeoman project.
+
+	More documentation at: http://yeoman.io/
+
+	from anywhere on your machine run:
+	> npm install -g yo
+		(-g installs it globally)
+		This installs bower and grunt automatically
+
+	cd into directory you want the project in
+
+	> yo webapp	
+		> bootstrap
+			This installs bootstrap 3 with less and jquery (since it's a dependancy)
+
+
+
