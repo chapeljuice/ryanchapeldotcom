@@ -11,8 +11,19 @@
 
 		// variables to be used later
 		yPosition: '',
-		browserWidth: ''
+		browserWidth: '',
+		timeout: '',
 
+		specialList: function() {
+			rcdc.timeout = window.setTimeout( function() {
+
+				// make special-list special
+				$( '.special-list li i' )
+					.removeClass( 'fa-star-o' )
+					.addClass( 'fa-star yes' );
+
+			}, 1000 );
+		}
 
 	};
 
@@ -36,6 +47,13 @@
 					.removeClass( 'scrolled' );
 			}
 		}
+
+	});
+
+	$( document ).ready( function () {
+
+		// initialiize all the things
+		rcdc.specialList();
 
 	});
 

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>New site! Now with *REAL* content!</title>
+        <title>Thanks! - Ryan Chapel Dot Com</title>
         <meta name="author" content="Ryan Chapel" />
         <meta name="twitter:site" content="@chapeljuice" />
         <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
@@ -11,6 +11,7 @@
         <!-- include fonts -->
         <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         <!-- include styles -->
+        <link rel="stylesheet" href="styles/font-awesome.min.css">
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
@@ -43,32 +44,9 @@
 
             <div class="web">
 
-                <section>
-                    <article>
-                        <h2>New site! Now with *REAL* content!</h2>
-                        <span class="date">May 12, 2014</span>
-
-                        <img src="images/boom-code-shot.gif" alt="Source code of ryanchapel.com" class="boom" />
-
-                        <p class="lead">For the longest time ryanchapel.com was basically just my name and some contact info. I've finally taken the time to build something that I think is nice, and also put some content on here that I *should* be updating regularly!</p>
-
-                        <p class="lead">All that being said, let's talk about the site a bit:</p>
-
-                        <h3>RWD - Responsive Web Design</h3>
-                        <p>Everybody's favorite. I guess my last design was technically responsive, althogh nothing really moved around that much or behaved differently at different browser widths. This time I've taken the time to develop the site using the mobile first approach&mdash;that is, start with designing / developing the mobile experience, and then get wider and wider until it looks good at my maximum width (which I set to <code>140rem</code>, but we'll get to that in a second).</p>
-
-                        <p>I tried to get away from using 'px' units for everything this time, and so I'm using mostly 'rem' units (for widths at least). Rem units are great because they're based off of your root size. For example, most browsers default their font-size to <code>16px</code>. I set my font-size on my <code>html</code> element to be <code>62.5%</code>, which (if you do the math) works out to be 10px. This keeps everything simple and straightforward, and so now whenever I need to specify something that's around 14px I'd just use <code>1.4rem</code>, which is 14 / 10 (the base font-size). The only drawback (if you call it that) is that this is not supported in IE8 or below. I've decided not to support those browsers, so it's not a big deal here. If you <i>were</i> to support them, all you'd have to do is declare a font-size in a different unit right above the <code>rem</code> declaration, such as <code>px</code> or <code>em</code>.</p>
-
-                        <h3>CSS Transitions / Animations</h3>
-                        <p>If you look hard enough you'll see some subtle css transitions and animations that I think add to the user's experience, but not detract from it. In large browsers it's mostly subtle hover effects, however in smaller browsers when you scroll down the logo and other elements in the header shrink and scoot up a bit so that the user has more area to view the content.</p>
-
-                        <h3>Content</h3>
-                        <p>As I stated before I'm now going to be using this website not really as a 'blog', but as a way to teach users some of my experiences and how to create cool things I've thought of or come across. My hope is that I can help someone create a better user experience for their users on their sites, and also teach a few things in the process (heck, and maybe even learn a thing or two myself!)</p>
-
-                        <p class="lead">If you have any thoughts about the new site, let me know!
-                        <br />
-                        <a href="mailto:ryan.chapel@gmail.com?subject=rcdc :: questions, comments, concerns">Questions, comments, concerns? Email me!</a></p>
-                    </article>
+                <section class="thanks">
+                    <p class="lead">Thanks! I'll get back to you shortly, I promise!</p>
+                    <p>In the meantime, <a href="index.html">check out my articles by going back to the home page</a>.</p>
                 </section>
 
             </div>

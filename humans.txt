@@ -1,0 +1,36 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Me: Ryan Chapel
+  Site: http://ryanchapel.com
+  Twitter: @ChapelJuice
+  Location: Seattle-ish, Washington
+  Contact: chapeljuice@gmail.com
+
+/* THANKS */
+	Books:  product design for the web by Randy J. Hunt
+          Implememnting Reponsive Web Design by Tim Kadlec
+          Adaptive Web Design by Aaron Gustafson
+
+/* SITE */
+  Last updated: 22 May 2014
+
+
+                                                    dddddddd
+                                                    d::::::d
+                                                    d::::::d
+                                                    d::::::d
+                                                    d:::::d
+rrrrr   rrrrrrrrr       cccccccccccccccc    ddddddddd:::::d     cccccccccccccccc
+r::::rrr:::::::::r    cc:::::::::::::::c  dd::::::::::::::d   cc:::::::::::::::c
+r:::::::::::::::::r  c:::::::::::::::::c d::::::::::::::::d  c:::::::::::::::::c
+rr::::::rrrrr::::::rc:::::::cccccc:::::cd:::::::ddddd:::::d c:::::::cccccc:::::c
+ r:::::r     r:::::rc::::::c     cccccccd::::::d    d:::::d c::::::c     ccccccc
+ r:::::r            c:::::c             d:::::d     d:::::d c:::::c
+ r:::::r            c::::::c     cccccccd:::::d     d:::::d c::::::c     ccccccc
+ r:::::r            c:::::::cccccc:::::cd::::::ddddd::::::ddc:::::::cccccc:::::c
+ r:::::r             c:::::::::::::::::c d:::::::::::::::::d c:::::::::::::::::c
+ r:::::r              cc:::::::::::::::c  d:::::::::ddd::::d  cc:::::::::::::::c
+ rrrrrrr                cccccccccccccccc   ddddddddd   ddddd    cccccccccccccccc

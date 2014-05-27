@@ -284,6 +284,117 @@ section article li {
     border: 5px solid #2c3e50;
 }
 
+/* special list */
+.special-list {
+    padding: 0 0 0 15px;
+}
+
+.special-list li {
+    padding-left: 10px;
+    position: relative;
+    -webkit-transition: .2s all ease-in-out;
+       -moz-transition: .2s all ease-in-out;
+         -o-transition: .2s all ease-in-out;
+            transition: .2s all ease-in-out;
+}
+
+.special-list li i {
+    font-size: 2rem;
+    padding: 0 10px;
+    position: absolute;
+        left: -25px;
+}
+
+@-webkit-keyframes checkr {
+    0% {
+        font-size: 3rem;
+    }
+    100% {
+        font-size: 2rem;
+    }
+}
+
+@-moz-keyframes checkr {
+    0% {
+        font-size: 3rem;
+    }
+    100% {
+        font-size: 2rem;
+    }
+}
+
+@keyframes checkr {
+    0% {
+        font-size: 3rem;
+    }
+    100% {
+        font-size: 2rem;
+    }
+}
+
+.special-list li i.yes {
+    -webkit-animation: checkr .4s ease-in-out;
+       -moz-animation: checkr .4s ease-in-out;
+         -o-animation: checkr .4s ease-in-out;
+            animation: checkr .4s ease-in-out;
+    color: #e74c3c;
+}
+
+/* forms */
+
+form.contact-form {
+    background: #2c3e50;
+    border-radius: 3px;
+    color: #fff;
+    max-width: 60rem;
+    padding: 10px;
+}
+
+.contact-form > div {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.names span {
+    float: left;
+    padding-left: 10px;
+    width: 50%;
+}
+
+    .names span:first-child {
+        padding-left: 0;
+    }
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 2px solid #ecf0f1;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 10rem;
+}
+
+input[type="submit"] {
+    background: #e74c3c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    max-width: 45rem;
+    padding: 15px;
+}
+
+    input[type="submit"]:hover {
+        background: #cf4436;
+    }
+
 .date {
     display: block;
     font-size: 1rem;
