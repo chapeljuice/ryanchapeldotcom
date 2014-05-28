@@ -16,10 +16,6 @@
 
 * {
     box-sizing: border-box;
-    -webkit-transition: 150ms all ease-in-out;
-       -moz-transition: 150ms all ease-in-out;
-         -o-transition: 150ms all ease-in-out;
-            transition: 150ms all ease-in-out;
 }
 
 html {
@@ -191,6 +187,10 @@ nav > ul > a.active,
 a {
     color: #3498db;
     text-decoration: none;
+    -webkit-transition: 150ms all ease-in-out;
+       -moz-transition: 150ms all ease-in-out;
+         -o-transition: 150ms all ease-in-out;
+            transition: 150ms all ease-in-out;
 }
 
     a:hover,
