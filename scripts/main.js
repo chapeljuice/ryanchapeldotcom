@@ -55,6 +55,12 @@
 		// initialiize all the things
 		rcdc.specialList();
 
+		// make menu open / close
+		$( '.menu' ).on( 'click', function () {
+			$( this )
+				.toggleClass( 'closed open' );
+		});
+
 	});
 
 })();

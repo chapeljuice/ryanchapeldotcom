@@ -31,17 +31,25 @@ body {
     padding: 0 10px 10px 10px;
 }
 
+/* parent div of h1 */
 .is {
+    float: left;
+    margin-left: 30%;
     position: relative;
     z-index: 2;
 }
 
 h1 {
-    float: right;
-    font-size: 2.5rem;
+    color: #2c3e50;
+    font-size: 2rem;
     margin: 6px 0;
+    text-align: center;
     text-shadow: 0 0 5px #fff;
     text-transform: lowercase;
+    -webkit-transition: 150ms all ease-in-out;
+       -moz-transition: 150ms all ease-in-out;
+         -o-transition: 150ms all ease-in-out;
+            transition: 150ms all ease-in-out;
 }
 
     .scrolled h1 {
@@ -85,6 +93,7 @@ header {
     width: calc(100% - 20px);
 }
 
+/* code styles for when not using prism.js */
 code {
     background: #ecf0f1;
     border-radius: 3px;
@@ -95,6 +104,7 @@ pre > code {
     background: none; /* fixes issues with prism styles */
 }
 
+/* child div of header */
 .chapel {
     background: #fff;
     border-top-left-radius: 3px;
@@ -106,8 +116,12 @@ pre > code {
 .logo {
     float: left;
     max-width: 60px; /* IE8 fallaback */
-    max-width: 6rem;
+    max-width: 5rem;
     position: fixed;
+    -webkit-transition: 150ms all ease-in-out;
+       -moz-transition: 150ms all ease-in-out;
+         -o-transition: 150ms all ease-in-out;
+            transition: 150ms all ease-in-out;
     z-index: 1;
 }
 
@@ -127,6 +141,94 @@ pre > code {
                 transform: scale( .5, .5 ) translate( -30px, 0 );
     }
 
+/* menu icon */
+.really {
+    float: right;
+    margin-top: .7rem;
+}
+
+a.menu {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 2rem;
+    position: relative;
+        bottom: 2px;
+    width: 2rem;
+}
+
+    a.menu span {
+        margin: 0 auto;
+        position: relative;
+            top: 12px;
+        -webkit-transition-duration: 0s;
+           -moz-transition-duration: 0s;
+             -o-transition-duration: 0s;
+                transition-duration: 0s;
+        -webkit-transition-delay: .2s;
+           -moz-transition-delay: .2s;
+             -o-transition-delay: .2s;
+                transition-delay: .2s;
+    }
+
+    a.menu span:before,
+    a.menu span:after {
+        content: '';
+        position: absolute;
+        -webkit-transition: margin .2s linear .2s, -webkit-transform .2s linear 0s;
+           -moz-transition: margin .2s linear .2s,    -moz-transform .2s linear 0s;
+             -o-transition: margin .2s linear .2s,      -o-transform .2s linear 0s;
+                transition: margin .2s linear .2s,         transform .2s linear 0s;
+    }
+
+    a.menu span:before {
+        margin-top: -6px;
+    }
+
+    a.menu span:after {
+        margin-top: 6px;
+    }
+
+    a.menu span:before,
+    a.menu span,
+    a.menu span:after {
+        background-color: #2c3e50;
+        display: block;
+        height: .2rem;
+        width: 2rem;
+    }
+    
+    /* menu open */
+    a.menu.open span {
+        background-color: transparent;
+    }
+
+    .menu.open span:before {
+        margin-top: 0;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition-delay: 0, .2s;
+           -moz-transition-delay: 0, .2s;
+             -o-transition-delay: 0, .2s;
+                transition-delay: 0, .2s;
+    }
+    .menu.open span:after {
+        margin-top: 0;
+        -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+             -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition-delay: 0, .2s;
+           -moz-transition-delay: 0, .2s;
+             -o-transition-delay: 0, .2s;
+                transition-delay: 0, .2s;
+    }
+
+/* nav shown / hidden by the menu icon */
 nav {
     clear: both;
     padding: 20px 0 10px;
@@ -157,7 +259,7 @@ nav > ul > a,
     background: #3498db;
     border-radius: 3px;
     color: #fff;
-    padding: 0 3px 2px 3px; 
+    padding: 0 2px; 
 }
 
 nav > ul > a:hover,
@@ -168,6 +270,7 @@ nav > ul > a.active,
     color: #fff;
 }
 
+/* main content div */
 .coolest {
     background: #fff;
     border-radius: 3px;
@@ -179,8 +282,9 @@ nav > ul > a.active,
     padding: 10px;
 }
 
+/* direct child of main content div */
 .web {
-    margin: 140px auto 0;
+    margin: 100px auto 0;
     max-width: 1000px;
 }
 
@@ -207,11 +311,7 @@ a {
         background: #cf4436;
     }
 
-aside {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
+/* main content divs for articles */
 section {
     border-top: 2px solid #ecf0f1;
     line-height: 2.5rem;
@@ -274,17 +374,18 @@ section article li {
         color: #2980b9;
     }
 
+/* large hero image styles */
 .boom {
     border: 5px solid #2980b9;
     border-radius: 3px;
     max-width: 100%;
 }
 
-.boom:hover {
-    border: 5px solid #2c3e50;
-}
+    .boom:hover {
+        border: 5px solid #2c3e50;
+    }
 
-/* special list */
+/* lists with special powers */
 .special-list {
     padding: 0 0 0 15px;
 }
@@ -341,7 +442,6 @@ section article li {
 }
 
 /* forms */
-
 form.contact-form {
     background: #2c3e50;
     border-radius: 3px;
@@ -417,6 +517,13 @@ input[type="submit"] {
         margin-top: 0;
     }
 
+/* the blurb about me on the bottom (or side) of the page */
+aside {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* direct child div of aside about me */
 .bio {
     background: #2c3e50;
     border-radius: 3px;
@@ -426,26 +533,26 @@ input[type="submit"] {
     padding: 20px;
 }
 
-.bio img {
-    border-radius: 3px;
-    float: left;
-    margin: 0 10px 0 0;
-    max-width: 90px;
-}
+    .bio img {
+        border-radius: 3px;
+        float: left;
+        margin: 0 10px 0 0;
+        max-width: 90px;
+    }
 
-.bio p {
-    display: inline;
-    line-height: 2.2rem;
-}
+    .bio .words {
+        margin-top: -6px;
+    }
 
-.words {
-    margin-top: -6px;
-}
+    .bio p {
+        display: inline;
+        line-height: 2.2rem;
+    }
 
-.bio p.find-me {
-    display: block;
-    margin-bottom: 0;
-}
+    .bio p.find-me {
+        display: block;
+        margin-bottom: 0;
+    }
 
 a.social-links {
     margin-bottom: 5px;
