@@ -59,30 +59,30 @@
                         <li><i class="fa fa-star-o"></i>Just want to chat?</li>
                     </ul>
 
-                    <p>Fill out the form below and i'll get back to you asap. I'm good like that! :)</p>
+                    <p>Fill out the form below and i'll get back to you asap. Or if you'd rather <a href="https://twitter.com/ChapelJuice" class="social-links twitter" target="_blank">talk via twitter</a>, I'll get back to you there in a flash too. I'm good like that! :)</p>
 
                     <form method="post" name="contact-form" class="contact-form" action="contact.php">
 
                         <div class="names">
                             <span class="first-name">
                                 <label for="firstName">First name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="e.g. John" />
+                                <input type="text" id="firstName" name="firstName" placeholder="e.g. John" required />
                             </span>
 
                             <span class="last-name">
                                 <label for="lastName">Last name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="e.g. Smith" />
+                                <input type="text" id="lastName" name="lastName" placeholder="e.g. Smith" required />
                             </span>
                         </div>
 
                         <div class="contact">
                             <label for="email">Email address</label>
-                            <input type="email" id="email" name="email" placeholder="e.g. you@example.com" />
+                            <input type="email" id="email" name="email" placeholder="e.g. you@example.com" required />
                         </div>
 
                         <div class="message">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="e.g. Hey Ryan!"></textarea>
+                            <textarea id="message" name="message" placeholder="e.g. Hey Ryan!" required></textarea>
                         </div>
 
                         <input type="submit" value="Contact Ryan" />
