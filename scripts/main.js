@@ -57,7 +57,7 @@
 
 		// make menu open / close
 		$( '.menu' ).on( 'click', function () {
-			$( this )
+			$( '.really' )
 				.toggleClass( 'closed open' );
 		});
 
