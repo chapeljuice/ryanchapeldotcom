@@ -1,124 +1,162 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Ryan Chapel Dot Com</title>
-        <meta name="author" content="Ryan Chapel" />
-        <meta name="twitter:site" content="@chapeljuice" />
-        <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- include fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-        <!-- include styles -->
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-            
-        <header class="ryan">
+  <head>
+    <meta charset="utf-8" />
+    <title>ryan chapel dot com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ryan Chapel" />
+    <meta name="twitter:site" content="@chapeljuice" />
+    <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
+    <meta name="keywords" content="ryan, ryan chapel, ryanchapel, chapel, chapeljuice, @chapeljuice, web, developer, web developer, designer, web designer, jawesome" />
+    <!-- so. many. favicons. -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-icon-152x152.png" />
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png" />
+    <meta name="msapplication-TileColor" content="#e7e7e7">
+    <meta name="theme-color" content="#e7e7e7" />
+    <link rel="canonical" href="//ryanchapel.com" />
+    <!-- location of non-minified css:
+    <link rel="stylesheet" href="css/styles.css">
+    -->
+    <style>
+      /* critical path css */
+      *{box-sizing:border-box}html,body,div,span,h1,h2,h3,h4,h5,h6,p,img,strong,ol,ul,li,form,label,article,aside,canvas,footer,header,hgroup,main,menu,nav,section{border:0;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{font-size:62.5%;height:100%;overflow-y:scroll}.wf-loading body,.wf-loading h1{visibility:hidden}.wf-active body,.wf-active h1{visibility:visible}body{background:transparent url(../img/bg_squairy_light.png) 0 0 repeat;font-family:'adobe-caslon-pro',serif;font-size:2rem;line-height:180%;-webkit-transition:250ms -webkit-transform ease-in-out;-moz-transition:250ms -moz-transform ease-in-out;-o-transition:250ms -o-transform ease-in-out;transition:250ms transform ease-in-out}body.open-menu{-webkit-transform:translateX(50%);-moz-transform:translateX(50%);-ms-transform:translateX(50%);-o-transform:translateX(50%);transform:translateX(50%)}header,main,footer{margin:0 auto 2rem;max-width:60rem}header{padding-top:6rem}h1,h2,h3,h4,h5,h6{font-family:'futura-pt',sans-serif;font-weight:400}h1{font-size:4rem;font-weight:700;padding:3rem 0;text-align:center}h2{font-size:3rem;margin-top:2rem}h3{font-size:2.2rem;font-style:italic}h3 + p{margin-top:1rem}img{height:auto;width:100%}img.album-image{width:auto}a,.music ul a .album-name{color:#07b;-webkit-transition:200ms color ease-in-out;-moz-transition:200ms color ease-in-out;-o-transition:200ms color ease-in-out;transition:200ms color ease-in-out}a:hover,.music ul a .album-name:hover{color:#ee5418}::selection{background:#ee5418}::-moz-selection{background:#ee5418}a:hover::selection{background:#07b}a:hover::-moz-selection{background:#07b}p{margin:2rem 0}section{border-bottom:5px solid #fff;padding:2rem}section:first-child{border-top:5px solid #fff}.note{font-size:1.6rem;line-height:125%;margin:0 auto;max-width:60rem;padding:20px 20px 0}.lowlight{color:#aaa}.main-menu{background-color:#444;box-shadow:inset -10px 0 15px -10px rgba(0,0,0,.5);color:#fff;height:100%;position:absolute;top:0;-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out;width:50%}.main-menu:after{background:transparent url(../img/rcdc-logo-white-min.png) 50% 10% no-repeat;content:'';display:block;height:100%;opacity:.04;width:100%}.main-menu li{list-style:none}.main-menu a{background:#555;border-bottom:5px solid #444;box-shadow:inset -10px 0 15px -10px rgba(0,0,0,.5);color:#fff;display:block;font-family:'futura-pt',sans-serif;padding:10px 20px;text-decoration:none;-webkit-transition:250ms background-color ease-in-out;-moz-transition:250ms background-color ease-in-out;-o-transition:250ms background-color ease-in-out;transition:250ms background-color ease-in-out}.main-menu a:hover{background:#666}.its-a-me{border:10px solid #ee5418;border-radius:0 50% 50%;display:block;margin:0 auto;max-width:200px;width:55%}.menu{position:absolute;top:15px;left:20px;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out;z-index:2}a.menu-icon{cursor:pointer;height:30px;width:30px}a.menu-icon span{position:relative;top:10px;-webkit-transition-duration:0;-moz-transition-duration:0;-o-transition-duration:0;transition-duration:0;-webkit-transition-delay:100ms;-moz-transition-delay:100ms;-o-transition-delay:100ms;transition-delay:100ms}a.menu-icon span:before,a.menu-icon span:after{content:'';position:absolute;-webkit-transition:margin 100ms linear 100ms,-webkit-transform 100ms linear 0;-moz-transition:margin 100ms linear 100ms,-moz-transform 100ms linear 0;-o-transition:margin 100ms linear 100ms,-o-transform 100ms linear 0;transition:margin 100ms linear 100ms,transform 100ms linear 0}a.menu-icon span:before{margin-top:-7px}a.menu-icon span:after{margin-top:7px}a.menu-icon span:before,a.menu-icon span,a.menu-icon span:after{background-color:#111;display:block;height:4px;width:30px}.open-menu a.menu-icon span{background-color:transparent}.open-menu .menu-icon span:before{margin-top:0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition-delay:0,100ms;-moz-transition-delay:0,100ms;-o-transition-delay:0,100ms;transition-delay:0,100ms}.open-menu .menu-icon span:after{margin-top:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition-delay:0,100ms;-moz-transition-delay:0,100ms;-o-transition-delay:0,100ms;transition-delay:0,100ms}.tiny{color:#111;font-family:'futura-pt',sans-serif;font-size:1.1rem;position:absolute;top:-8px;text-transform:uppercase;-webkit-transition:75ms opacity ease-in-out,150ms -webkit-transform linear;-moz-transition:75ms opacity ease-in-out,150ms -moz-transform linear;-o-transition:75ms opacity ease-in-out,150ms -o-transform linear;transition:75ms opacity ease-in-out,150ms transform linear}.music{opacity:1;visibility:visible}.music ul{padding:0 0 0 20px}.music li{list-style:none;position:relative}.music li:before{content:'';background:#a7a7a7;background:rgba(0,0,0,.3);border-radius:0 50% 50% 50%;height:10px;position:absolute;top:8px;left:-16px;width:10px}.music ul a{color:#111;font-size:1.8rem;text-decoration:none}.music ul a .album-name{text-decoration:underline}.music ul a .artist-name{color:#111;font-size:1.8rem;font-style:italic}.social-list li{display:inline-block;list-style:none;width:calc((100% - 40px) / 6)}.social-list a{color:transparent;display:block;font-size:0;padding:10px;text-align:center;text-decoration:none;-webkit-transition:180ms -webkit-transform ease-in-out;-moz-transition:180ms -moz-transform ease-in-out;-o-transition:180ms -o-transform ease-in-out;transition:180ms transform ease-in-out}.social-list a.linkedin{background:transparent url(../img/socicons/linkedin-color-min.png) center center no-repeat;background-size:64%}.social-list a.github{background:transparent url(../img/socicons/github-color-min.png) center center no-repeat;background-size:72%}.social-list a.twitter{background:transparent url(../img/socicons/twitter-color-min.png) center center no-repeat;background-size:75%}.social-list a.facebook{background:transparent url(../img/socicons/facebook-color-min.png) center center no-repeat;background-size:33%}.social-list a.youtube{background:transparent url(../img/socicons/youtube-color-min.png) center center no-repeat;background-size:87%}.social-list a.googleplus{background:transparent url(../img/socicons/googleplus-color-min.png) center center no-repeat;background-size:59%}.social-list a:hover{transform:scale(1.2,1.2)}footer{font-size:1.6rem;line-height:110%;margin-bottom:0;padding:20px}.back-to-top{background:rgba(255,255,255,.6);border:none;color:#07b;cursor:pointer;font-family:'futura-pt',sans-serif;font-size:1.4rem;padding:5px 10px;position:fixed;bottom:20px;right:20px;text-decoration:none;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out}.back-to-top:before{content:'⬆';font-size:1.4rem;padding-right:.5rem}.back-to-top:hover{background:#fff}@media (min-width:768px){body.open-menu{-webkit-transform:translateX(200px);-moz-transform:translateX(200px);-ms-transform:translateX(200px);-o-transform:translateX(200px);transform:translateX(200px)}.main-menu{-webkit-transform:translateX(-200px);-moz-transform:translateX(-200px);-ms-transform:translateX(-200px);-o-transform:translateX(-200px);transform:translateX(-200px);width:200px}.back-to-top{font-size:1.8rem;padding:10px}}@media (min-width:1000px){body.open-menu{-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.menu{opacity:0;position:fixed;visibility:hidden}.main-menu{background:rgba(255,255,255,.6);box-shadow:none;float:right;height:auto;margin:10px 20px;position:fixed;right:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none;width:auto}.open-menu .main-menu.hide{opacity:1;position:fixed;visibility:visible}.main-menu li{display:inline-block}.main-menu a{background:transparent;border-bottom:2px solid transparent;box-shadow:none;color:#111;display:inline-block;font-size:1.8rem;padding:4px 15px;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out}.main-menu a:hover{background:#fff;border-color:#000}}.emphasis{font-style:italic}.strikethrough{text-decoration:line-through}.hide{opacity:0;visibility:hidden}.show{opacity:1;visibility:visible}.visually-hidden{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);padding:0!important;border:0!important;height:1px!important;width:1px!important;overflow:hidden}.vanish{-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);opacity:0;-webkit-transform:translate(0px,-20px);-moz-transform:translate(0px,-20px);-ms-transform:translate(0px,-20px);-o-transform:translate(0px,-20px);transform:translate(0px,-20px)}
+    </style>
+    <script>
+      // typekit async font script
+      (function(d) {
+        var config = {
+          kitId: 'tex8cyp',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config);}catch(e){}};s.parentNode.insertBefore(tk,s);
+      })(document);
+    </script>
+  </head>
+  <body>
 
-            <div class="chapel">
-                <a href="index.html"><img src="images/ryanchapel-logo-red.png" class="logo" alt="website logo" /></a>
+    <div class="menu">
+      <a class="menu-icon">
+        <span></span>
+        <p class="tiny">Menu</p>
+      </a>
+    </div>
 
-                <div class="is"><h1 title="...is the coolest.">Ryan Chapel.</h1></div>
+    <div class="main-menu">
+      <nav>
+        <ul>
+          <li><a class="menu-link" href="#web">The web</a></li>
+          <li><a class="menu-link" href="#family">Family</a></li>
+          <li><a class="menu-link" href="#interests">Interests</a></li>
+          <li><a class="menu-link" href="#contact">Contact</a></li>
+          <li><a class="menu-link" href="files/ryanchapel-resume-short.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
 
-                <div class="really closed">
-                    <a class="menu"><span></span></a>
-                </div>
+    <div id="home" class="main-content">
+      <header>
+        <img class="its-a-me" src="img/stash-it2-small-min.jpg" alt="Picture of me (Ryan Chapel)." />
+        <h1>Ryan Chapel</h1>
+      </header>
 
-                <nav class="the">
-                    <ul>
-                        <a href="resume.html">
-                            <li>Resum&eacute;</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About me</li>
-                        </a>
-                        <a href="contact.html" class="highlight">
-                            <li>Hire me!</li>
-                        </a>
-                    </ul>
-                </nav>
+      <main>
+
+        <!-- intro -->
+        <section id="intro">
+          <p>Hi!</p>
+          <p>I'm the husband of <a href="//lh3.googleusercontent.com/xbEG0WsY1Lz9-rNDO2SwY7jZ7DoorD3UIPqSI9qMkRbIuRAch42xT3i7TctU-dlJcdYvyNY1AQQj5Ugd08JzqkX7C4ZYfwseNC4UrGWukH0SHRtFKPmaB91szRk2eZSxLMeAzx1C84JvbsiwIHV6QxjDqOF7nAL4OrWk51CcwY-x0aHs_zuVIV4V1sjB57Y_rFbjDiNn8Wj7fxjHJgers0jucUT59ZuihNADdf5C2yY1kzMUVqfDPDTqIZqRS9ZWtDQ0vvVZ5pp6JcJabaMmJ69tcF4Po3Ks__GEdYPRszRGG3wT8oZNavGCck-TuIWvgCuzGnYg1ZJBl6k00LUheyBxlHhXB17pej1YENl2q3Ri8s84lr3JiJLNkAxBSOmLhkEw58TZJSzdl4Nxs1EsQKTgxeRX0VpvuhNnjt4r4ZgubNc3bKIsp_mnYA8UVyU8TzRtLkrLwGNoeKpk0x4VMZlO5s3xqVqVqfGYb7jKdfUausmenHEUzxHbVk8gu8duwsbb6CXs9Uw_Xi-yGHkExYnWtR7xFbeyrc3wFRW0zgI16DBoOssEKpxPQd08hX5PVZ9zVQ=w730-h972-no" target="_blank">an awesome wife</a>, a father of <a href="https://goo.gl/photos/SFPDY5kMimgKmCdR8" target="_blank">two amazing kids</a>, and a nominee for the luckiest person in the world award.<span class="lowlight">*</span></p>
+          <p class="emphasis">I also make websites.</p>
+        </section>
+
+        <!-- the web -->
+        <section id="web">
+          <h2>The web</h2>
+          <div class="section-content">
+            <p>I am a web developer and designer, and I'm proud of it. There are a ton of frustrating web experiences out there, and I'm glad to be one of the good guys, trying to take bad experiences and turning them into <span class="strikethrough">good</span> <span class="emphasis">great</span> ones.</p>
+            <h3>My job</h3>
+            <p>I'm a Senior Web Developer and manager at the marketing headquarters of <a href="//www.apollo.edu" target="_blank">Apollo Education Group</a> in Seattle, WA, where I manage our Marketing Platform Dev team. I specialize in <strong>responsive web design (RWD)</strong>, <strong>mobile UI / interaction</strong>, and <strong>accessibility</strong>, and have been lead developer on a number of large scale projects including <a href="//www.phoenix.edu" target="_blank">the main University of Phoenix website</a> redesign in 2016, the <a href="//brand.phoenix.edu" target="_blank">University of Phoenix Brand site</a> in early 2015, and ensuring our sites fully comply with WCAG 2.0 accessibility requirements.</p>
+            <p>I also <a href="//imgur.com/a/z5ysI" target="_blank">created a device lab wall</a> which I maintain for our office, and I am constantly creating mockups and prototypes of things to test or utilize in order to create better user experiences on all of our properties. <a href="//i.imgur.com/8Dc1onV.jpg" target="_blank">Here's a picture of my desk</a>.</p>
+
+            <h3>Elsewhere</h3>
+            <p>Besides my "9 to 5" I also do quite a bit of designing, devving, and learning in my spare time. It seems like my website is in a constant limbo of updates. I help my wife and friends out with their websites, and I've taken quite a few <a href="//www.udacity.com" target="_blank">Udacity</a>, <a href="//www.codeschool.com" target="_blank">Code School</a>, and <a href="//www.codecademy.com/" target="_blank">Codecademy</a> courses. It stretches the brain and keeps me on top of my game. :)</p>
+          </div>
+        </section>
+
+        <!-- family -->
+        <section id="family">
+          <h2>Family</h2>
+          <div class="section-content">
+            <p>My wife, 2 sons (ages 6 and 2), and I live in <a href="//goo.gl/maps/TY1Rx" target="_blank">Snoqualmie Ridge</a>, a pretty large neighborhood about 25 minutes East of Seattle, WA. We've been living there for 3 years now and cannot get enough of it. With <a href="//goo.gl/photos/8y7KztCW8NQnWg8t8" target="_blank">views like this everywhere you turn</a>, it's hard to complain. Our kids can walk to school and we have amazing neighbors (of which, a lot of them are now really good friends).</p>
+            <p>We couldn't ask for a better place to live.</p>
+          </div>
+        </section>
+
+        <!-- interests -->
+        <section id="interests">
+          <h2>Interests</h2>
+          <div class="section-content">
+            <p>Since I'm sure my wife will read this at some point I'll state the obvious fact that my wife and kids are my #1 interest. :)</p>
+            <p>Below are some others:</p>
+
+            <h3>Woodworking</h3>
+            <p>After we got settled in our current house my wife and I really wanted to make the place feel more like it was <span class="emphasis">ours</span>. I decided to make a <a href="//goo.gl/photos/bQLn8jAuwz4J1hDd8" target="_blank">bench / coat rack in our entry way</a>...and that was it! That was the project that really got me into woodworking. Nowadays it seems like I'm making a <a href="//goo.gl/photos/tWHfkX1Dz5wS2t7M9" target="_blank">new project</a> <a href="//goo.gl/photos/wxvDVxtPLQcvUFSC6" target="_blank">every weekend</a>...and I'm enjoying every minute of it!</p>
+
+            <h3>Golfing</h3>
+            <p>Golfing when you have two tiny kids is hard. A day at the course takes up <span class="emphasis">SO. MUCH. TIME.</span></p>
+            <p>My friends and I have started to play 9 holes every Friday befre work (6-7am tee times, and really only when the weather is nice) and <a href="//i.imgur.com/lrmU40X.jpg" target="_blank">it's been working great</a>. We get to enjoy a quick round of golf, improve our game, and still have time on the weekends for everything else.</p>
+
+            <h3>Cooking</h3>
+            <p>I really enjoy cooking all year round, but my favorite is grilling, smoking, &amp; barbecuing. <a href="//imgur.com/a/8DTsQ" target="_blank">Here's a gallery of my latest successful pulled pork attempt</a> earlier in the year which I made from <a href="//smile.amazon.com/dp/1607747200" target="_blank">Aaron Franklin's book</a>, which I cannot recommend enough.</p>
+
+            <div class="music hide">
+              <h3>Music</h3>
+              <p>Like most people in this world, I like music. In fact, I <i>really</i> like music. It makes me feel good, it drowns out the noise both literally and mentally, and I like tapping my feet &amp; pretending I'm the best lap drummer in all the land. Here's what I've been listening to lately (courtesy of the <a href="//www.last.fm/api/show/user.getTopAlbums" target="_blank">Last.fm <span class="emphasis">getTopAlbums</span> api</a>):
+                <ul class="lastfm-album-list">
+                  <!-- ================================== -->
+                  <!-- this gets populated via javascript -->
+                  <!-- ================================== -->
+                </ul>
+              </p>
+              <p class="emphasis">(I feel like this is a good time to mention that music is also a large part of my kid's lives too...so you may see some crazy songs in that list. :D)</p>
             </div>
+          </div>
+        </section>
 
-        </header>
+        <!-- contact ryan -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="section-content">
+            <p>I'm all over the web, but if you're having trouble finding out more about me feel free to look here:
+              <ul class="social-list">
+                <li><a href="//twitter.com/chapeljuice" target="_blank" class="twitter">Twitter</a></li>
+                <li><a href="//www.linkedin.com/in/ryanchapel" target="_blank" class="linkedin">LinkedIn</a></li>
+                <li><a href="//github.com/chapeljuice" target="_blank" class="github">GitHub</a></li>
+                <li><a href="//plus.google.com/+RyanChapel?rel=author" target="_blank" class="googleplus">Google+</a></li>
+                <li><a href="//www.facebook.com/chapeljuice" target="_blank" class="facebook">Facebook</a></li>
+                <li><a href="//www.youtube.com/user/ChapelJuice" target="_blank" class="youtube">YouTube</a></li>
+              </ul>
+            </p>
+          </div>
+        </section>
 
-        <div class="coolest">
+      </main>
 
-            <div class="web">
+      <p class="note lowlight">* I'm quoting myself here. I do not know of such an award.</p>
 
-                <section>
-                    <ul class="content-list">
-                        <a href="styling-radios-and-checkboxes-for-the-future.html">
-                            <li>
-                                <p class="title">Styling radios and checkboxes for the future!</p>
-                                <p class="description">These form elements look ancient when unstyled. I've taken some steps to futurize them!</p>
-                                <span class="date">May 17, 2014</span>
+      <footer>
+        <p>&copy; 2016 Ryan Chapel, ryanchapel.com. All rights reserved.</p>
+        <p>Social icons made by <a title="Freepik" href="//www.freepik.com" target="_blank">Freepik</a> from <a title="Flaticon" href="//www.flaticon.com">www.flaticon.com</a>.</p>
+      </footer>
 
-                            </li>
-                        </a>
-                        <a href="let-me-share-my-setup-with-you.html">
-                            <li>
-                                <p class="title">Let me share my setup(s) with you.</p>
-                                <p class="description">I always enjoy reading up on how other developers work and the tools they use, so why not share what i'm using? :)</p>
-                                <span class="date">May 15, 2014</span>
-                            </li>
-                        </a>
-                        </a>
-                        <a href="new-site-now-with-real-content.html">
-                            <li>
-                                <p class="title">New site! Now with *REAL* content!</p>
-                                <p class="description">For the longest time ryanchapel.com was basically just my name and some contact info. I've finally taken the time to build something that I think is nice, and also put some content on here that I *should* be updating regularly!</p>
-                                <span class="date">May 12, 2014</span>
-                            </li>
-                        </a>
-                    </ul>
-                </section>
+      <button class="back-to-top hide">Top</button>
 
-            </div>
-
-            <aside class="developer">
-                
-                <div class="bio">
-                    <img src="images/me.jpg" alt="picture of site author (ryan chapel)" />
-                    <div class="words">
-                        <p class="me">I'm Ryan!</p>
-                        <p>I'm a web developer working in Seattle, specializing in responsive design, performant websites, and best practices in my code.</p>
-                        <p>I'm also a husband and father of two boys...and enjoy <a href="https://twitter.com/ChapelJuice/status/460116242255192065" target="_blank">meat</a>, <a href="https://twitter.com/ChapelJuice/status/426601118345330688" target="_blank">cocktails</a> and <a href="https://twitter.com/ChapelJuice/status/440200563481792512" target="_blank">yardwork.</a></p>
-                        <p class="find-me">You can find me on:
-                            <br />
-                            <a href="https://www.linkedin.com/in/ryanchapel" class="social-links linkedin" target="_blank">LinkedIn</a>
-                            <a href="https://github.com/chapeljuice" class="social-links github" target="_blank">GitHub</a>
-                            <a href="https://twitter.com/ChapelJuice" class="social-links twitter" target="_blank">Twitter</a>
-                            <a href="https://www.flickr.com/photos/chapelator/" class="social-links flickr" target="_blank">Flickr</a>
-                            <a href="https://www.youtube.com/user/ChapelJuice" class="social-links youtube" target="_blank">YouTube</a>
-                            <a href="https://plus.google.com/+RyanChapel?rel=author" class="social-links googleplus" target="_blank">Google+</a>
-                        </p>
-                    </div>
-                </div>
-
-            </aside>
-            
-        </div>
-
-        <footer class="ever">
-            &copy; 2014 Ryan Chapel. All rights reserved.
-        </footer>
-
-
-        <!-- include scripts -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-
-        <!-- google analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-1215567-1');ga('send','pageview');
-        </script>
-
-        <script src="scripts/main.js"></script>
-</body>
+    </div><!-- /end .content -->
+    <!-- location of non-minified javascript:
+    <script src="js/scripts.js"></script>
+    -->
+    <script>
+      (function(){"use-strict";var a=function(a){return document.querySelectorAll(a)[0]},b={lastFMData:"",scrollPosition:0,ticking:!1,getLastFMData:function(){var d=new XMLHttpRequest;d.onreadystatechange=function(){if(4==d.readyState&&(200<=d.status&&300>d.status||304==d.status)){b.lastFMData=JSON.parse(d.responseText);for(var f=[],e=[],c=0;c<b.lastFMData.topalbums.album.length;c++)e[c]=document.createElement("a"),e[c].href=b.lastFMData.topalbums.album[c].url,e[c].setAttribute("target","_blank"),e[c].innerHTML='<span class="album-name">'+b.lastFMData.topalbums.album[c].name+'</span> by <span class="artist-name">'+b.lastFMData.topalbums.album[c].artist.name+"</span>",f[c]=document.createElement("li"),f[c].id="album-"+(c+1),a(".lastfm-album-list").appendChild(f[c]),document.getElementById("album-"+(c+1)).appendChild(e[c]);a(".music").classList.remove("hide")}};d.open("get","//ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=chapeljuice&period=1month&limit=6&api_key=8ce7719aeb6e33d3e8311dca1301bf78&format=json",!0);d.send(null)},hasClass:function(a,b){return-1<(" "+a.className+" ").indexOf(" "+b+" ")},onScroll:function(){b.ticking=!1;b.scrollPosition=window.scrollY;0<b.scrollPosition?(a(".back-to-top").classList.remove("hide"),a(".back-to-top").classList.add("show")):(a(".back-to-top").classList.add("hide"),a(".back-to-top").classList.remove("show"));matchMedia("(min-width: 1000px)").matches&&(0<b.scrollPosition?(a(".menu").classList.remove("hide"),a(".menu").classList.add("show"),a(".main-menu").classList.add("hide"),a(".main-menu").classList.remove("show")):(a(".menu").classList.add("hide"),a(".menu").classList.remove("show"),a(".main-menu").classList.remove("hide"),a(".main-menu").classList.add("show")));b.requestTick()},requestTick:function(){b.ticking||requestAnimationFrame(b.onScroll);b.ticking=!0},toggleMenu:function(){b.hasClass(a("body"),"open-menu")?(a("body").classList.remove("open-menu"),a(".tiny").classList.remove("vanish")):(a("body").classList.add("open-menu"),a(".tiny").classList.add("vanish"))},init:function(){b.getLastFMData();window.addEventListener("scroll",b.onScroll,!1);a(".menu-icon").addEventListener("click",b.toggleMenu,!1);window.onhashchange=b.toggleMenu;a(".back-to-top").addEventListener("click",function(){window.scroll(0,0)},!1)}};window.addEventListener("load",b.init)})();
+    </script>
+  </body>
 </html>

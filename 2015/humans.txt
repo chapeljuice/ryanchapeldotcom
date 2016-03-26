@@ -7,10 +7,15 @@
   Site: http://ryanchapel.com
   Twitter: @ChapelJuice
   Location: Seattle-ish, Washington
-  Contact: ryan.chapel@gmail.com
+  Contact: chapeljuice@gmail.com
+
+/* THANKS */
+	Books:  product design for the web by Randy J. Hunt
+          Implememnting Reponsive Web Design by Tim Kadlec
+          Adaptive Web Design by Aaron Gustafson
 
 /* SITE */
-  Last updated: 28 may 2015
+  Last updated: 22 May 2014
 
 
                                                     dddddddd

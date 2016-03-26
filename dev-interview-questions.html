@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ryan chapel dot com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ryan Chapel" />
+    <meta name="twitter:site" content="@chapeljuice" />
+    <meta name="description" content="Thoughts and ramblings from Ryan Chapel, a front-end web developer who works in Seattle." />
+    <meta name="keywords" content="ryan, ryan chapel, ryanchapel, chapel, chapeljuice, @chapeljuice, web, developer, web developer, designer, web designer, jawesome" />
+    <!-- so. many. favicons. -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-icon-152x152.png" />
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png" />
+    <meta name="msapplication-TileColor" content="#e7e7e7">
+    <meta name="theme-color" content="#e7e7e7" />
+    <link rel="canonical" href="//ryanchapel.com" />
+    <!-- location of non-minified css:
+    <link rel="stylesheet" href="css/styles.css">
+    -->
+    <link rel="stylesheet" href="css/prism.css">
+    <style>
+      /* critical path css */
+      *{box-sizing:border-box}html,body,div,span,h1,h2,h3,h4,h5,h6,p,img,strong,ol,ul,li,form,label,article,aside,canvas,footer,header,hgroup,main,menu,nav,section{border:0;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{font-size:62.5%;height:100%;overflow-y:scroll}.wf-loading body,.wf-loading h1{visibility:hidden}.wf-active body,.wf-active h1{visibility:visible}body{background:transparent url(../img/bg_squairy_light.png) 0 0 repeat;font-family:'adobe-caslon-pro',serif;font-size:2rem;line-height:180%;-webkit-transition:250ms -webkit-transform ease-in-out;-moz-transition:250ms -moz-transform ease-in-out;-o-transition:250ms -o-transform ease-in-out;transition:250ms transform ease-in-out}body.open-menu{-webkit-transform:translateX(50%);-moz-transform:translateX(50%);-ms-transform:translateX(50%);-o-transform:translateX(50%);transform:translateX(50%)}header,main,footer{margin:0 auto 2rem;max-width:60rem}header{padding-top:6rem}h1,h2,h3,h4,h5,h6{font-family:'futura-pt',sans-serif;font-weight:400}h1{font-size:4rem;font-weight:700;padding:3rem 0;text-align:center}h2{font-size:3rem;margin-top:2rem}h3{font-size:2.2rem;font-style:italic}h3 + p{margin-top:1rem}h4{margin: 2rem 0 1rem;}img{height:auto;width:100%}img.album-image{width:auto}a,.music ul a .album-name{color:#07b;-webkit-transition:200ms color ease-in-out;-moz-transition:200ms color ease-in-out;-o-transition:200ms color ease-in-out;transition:200ms color ease-in-out}a:hover,.music ul a .album-name:hover{color:#ee5418}::selection{background:#ee5418}::-moz-selection{background:#ee5418}a:hover::selection{background:#07b}a:hover::-moz-selection{background:#07b}p{margin:2rem 0}section{border-bottom:5px solid #fff;padding:2rem}section:first-child{border-top:5px solid #fff}.note{font-size:1.6rem;line-height:125%;margin:0 auto;max-width:60rem;padding:20px 20px 0}.lowlight{color:#aaa}.main-menu{background-color:#444;box-shadow:inset -10px 0 15px -10px rgba(0,0,0,.5);color:#fff;height:100%;position:absolute;top:0;-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out;width:50%}.main-menu:after{background:transparent url(../img/rcdc-logo-white-min.png) 50% 10% no-repeat;content:'';display:block;height:100%;opacity:.04;width:100%}.main-menu li{list-style:none}.main-menu a{background:#555;border-bottom:5px solid #444;box-shadow:inset -10px 0 15px -10px rgba(0,0,0,.5);color:#fff;display:block;font-family:'futura-pt',sans-serif;padding:10px 20px;text-decoration:none;-webkit-transition:250ms background-color ease-in-out;-moz-transition:250ms background-color ease-in-out;-o-transition:250ms background-color ease-in-out;transition:250ms background-color ease-in-out}.main-menu a:hover{background:#666}.its-a-me{border:10px solid #ee5418;border-radius:0 50% 50%;display:block;margin:0 auto;max-width:200px;width:55%}.menu{position:absolute;top:15px;left:20px;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out;z-index:2}a.menu-icon{cursor:pointer;height:30px;width:30px}a.menu-icon span{position:relative;top:10px;-webkit-transition-duration:0;-moz-transition-duration:0;-o-transition-duration:0;transition-duration:0;-webkit-transition-delay:100ms;-moz-transition-delay:100ms;-o-transition-delay:100ms;transition-delay:100ms}a.menu-icon span:before,a.menu-icon span:after{content:'';position:absolute;-webkit-transition:margin 100ms linear 100ms,-webkit-transform 100ms linear 0;-moz-transition:margin 100ms linear 100ms,-moz-transform 100ms linear 0;-o-transition:margin 100ms linear 100ms,-o-transform 100ms linear 0;transition:margin 100ms linear 100ms,transform 100ms linear 0}a.menu-icon span:before{margin-top:-7px}a.menu-icon span:after{margin-top:7px}a.menu-icon span:before,a.menu-icon span,a.menu-icon span:after{background-color:#111;display:block;height:4px;width:30px}.open-menu a.menu-icon span{background-color:transparent}.open-menu .menu-icon span:before{margin-top:0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition-delay:0,100ms;-moz-transition-delay:0,100ms;-o-transition-delay:0,100ms;transition-delay:0,100ms}.open-menu .menu-icon span:after{margin-top:0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition-delay:0,100ms;-moz-transition-delay:0,100ms;-o-transition-delay:0,100ms;transition-delay:0,100ms}.tiny{color:#111;font-family:'futura-pt',sans-serif;font-size:1.1rem;position:absolute;top:-8px;text-transform:uppercase;-webkit-transition:75ms opacity ease-in-out,150ms -webkit-transform linear;-moz-transition:75ms opacity ease-in-out,150ms -moz-transform linear;-o-transition:75ms opacity ease-in-out,150ms -o-transform linear;transition:75ms opacity ease-in-out,150ms transform linear}.music{opacity:1;visibility:visible}.music ul{padding:0 0 0 20px}.music li{list-style:none;position:relative}.music li:before{content:'';background:#a7a7a7;background:rgba(0,0,0,.3);border-radius:0 50% 50% 50%;height:10px;position:absolute;top:8px;left:-16px;width:10px}.music ul a{color:#111;font-size:1.8rem;text-decoration:none}.music ul a .album-name{text-decoration:underline}.music ul a .artist-name{color:#111;font-size:1.8rem;font-style:italic}.social-list li{display:inline-block;list-style:none;width:calc((100% - 40px) / 6)}.social-list a{color:transparent;display:block;font-size:0;padding:10px;text-align:center;text-decoration:none;-webkit-transition:180ms -webkit-transform ease-in-out;-moz-transition:180ms -moz-transform ease-in-out;-o-transition:180ms -o-transform ease-in-out;transition:180ms transform ease-in-out}.social-list a.linkedin{background:transparent url(../img/socicons/linkedin-color-min.png) center center no-repeat;background-size:64%}.social-list a.github{background:transparent url(../img/socicons/github-color-min.png) center center no-repeat;background-size:72%}.social-list a.twitter{background:transparent url(../img/socicons/twitter-color-min.png) center center no-repeat;background-size:75%}.social-list a.facebook{background:transparent url(../img/socicons/facebook-color-min.png) center center no-repeat;background-size:33%}.social-list a.youtube{background:transparent url(../img/socicons/youtube-color-min.png) center center no-repeat;background-size:87%}.social-list a.googleplus{background:transparent url(../img/socicons/googleplus-color-min.png) center center no-repeat;background-size:59%}.social-list a:hover{transform:scale(1.2,1.2)}footer{font-size:1.6rem;line-height:110%;margin-bottom:0;padding:20px}.back-to-top{background:rgba(255,255,255,.6);border:none;color:#07b;cursor:pointer;font-family:'futura-pt',sans-serif;font-size:1.4rem;padding:5px 10px;position:fixed;bottom:20px;right:20px;text-decoration:none;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out}.back-to-top:before{content:'⬆';font-size:1.4rem;padding-right:.5rem}.back-to-top:hover{background:#fff}@media (min-width:768px){body.open-menu{-webkit-transform:translateX(200px);-moz-transform:translateX(200px);-ms-transform:translateX(200px);-o-transform:translateX(200px);transform:translateX(200px)}.main-menu{-webkit-transform:translateX(-200px);-moz-transform:translateX(-200px);-ms-transform:translateX(-200px);-o-transform:translateX(-200px);transform:translateX(-200px);width:200px}.back-to-top{font-size:1.8rem;padding:10px}}@media (min-width:1000px){body.open-menu{-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.menu{opacity:0;position:fixed;visibility:hidden}.main-menu{background:rgba(255,255,255,.6);box-shadow:none;float:right;height:auto;margin:10px 20px;position:fixed;right:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none;width:auto}.open-menu .main-menu.hide{opacity:1;position:fixed;visibility:visible}.main-menu li{display:inline-block}.main-menu a{background:transparent;border-bottom:2px solid transparent;box-shadow:none;color:#111;display:inline-block;font-size:1.8rem;padding:4px 15px;-webkit-transition:250ms all ease-in-out;-moz-transition:250ms all ease-in-out;-o-transition:250ms all ease-in-out;transition:250ms all ease-in-out}.main-menu a:hover{background:#fff;border-color:#000}}.emphasis{font-style:italic}.strikethrough{text-decoration:line-through}.hide{opacity:0;visibility:hidden}.show{opacity:1;visibility:visible}.visually-hidden{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);padding:0!important;border:0!important;height:1px!important;width:1px!important;overflow:hidden}.vanish{-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);opacity:0;-webkit-transform:translate(0px,-20px);-moz-transform:translate(0px,-20px);-ms-transform:translate(0px,-20px);-o-transform:translate(0px,-20px);transform:translate(0px,-20px)}code{max-width:60rem;font-size:1.4rem;}pre[class*="language-"]{padding:0 1.5rem;}.code-questions li {list-style: none;}.code-questions li ul li {list-style:disc;}
+    </style>
+    <script>
+      // typekit async font script
+      (function(d) {
+        var config = {
+          kitId: 'tex8cyp',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config);}catch(e){}};s.parentNode.insertBefore(tk,s);
+      })(document);
+    </script>
+  </head>
+  <body>
+
+    <div id="home" class="main-content">
+      <header>
+        <a href="/">
+            <img class="its-a-me" src="img/stash-it2-small-min.jpg" alt="Picture of me (Ryan Chapel)." />
+        </a>
+        <h1>Ryan Chapel</h1>
+      </header>
+
+      <main>
+
+        <!-- questions -->
+        <section id="questions">
+          <h2>Dev interviews are hard</h2>
+          <div class="section-content">
+            <p>During my recent "unemployment" stint (even though I was still getting paid...long story) I had some time to connect with a few different companies and endure some phone interviews. They are <span class="emphasis">THE. WORST.</span></p>
+            <p>To be completely honest, I think they can be somewhat unfair, and if you don't get a good interviewer or they choose a particular question that maybe you just don't remember off the top of your head perfectly you can go from "confident about the interview" to "wondering when it's going to be over", fast.</p>
+            <p>Below are a few technical questions I was asked during said phone interviews. I'll omit the companies they came from, but I hope this can help someone get prepared for what may come. Cheers! :)</p>
+            <h3>The questions</h3>
+            <ul class="code-questions">
+                <li>
+                    <h4>#1</h4>
+                    <pre>
+                        <code class="language-javascript">
+/*
+    You have an array of random ints, and you need to find the
+    first pair of ints that sums a third int, passed as a parameter.
+    Implement that code in Object-Oriented JavaScript.
+    Alternatively use plain old JavaScript.
+*/
+
+// Try to follow this interface
+var input = [3, 5, 7, 9, 4, 8, 5, 12, 4, 9, 16, 5],
+    desiredSum = 28,
+    solution = new PairFinder(input).findPair(desiredSum);
+    // solution should return: [12, 16]
+// altSolution = findPair(input, desiredSum);
+
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <h4>#2</h4>
+                    <pre>
+                        <code class="language-none">
+We expect it to take 1–3 hours but this is not a strict time limit.
+However we would ask that you make commits to a git repository every
+so often so that we can see how long it took and where you were at after an hour.
+
+So here is what you need to do:
+
+- create a blank git repo with an 'initial commit'
+  (and not anywhere public like github please) - this will serve as
+  a starting timestamp for us
+- check out the problem below
+- commit progress regularly
+- zip up the folder and email it back to me when you're done
+    - this way we have your code and can also see your progress
+      through the git history
+
+Feel free to use whatever language you're most comfortable with.
+
+~Course API Consumer~
+
+We use an API driven architecture. We've created a very simplified
+version of our api that just exposes some data about courses here:
+[website removed so company remains anonymous, sorry!]
+
+We'd like you to build a simple application that consumes this api
+and displays the data to the user. You are free to use whatever technology
+stack you'd like but please pick something you know; this isn't a good
+time to experiment in new technology! :)
+
+What we hope to see is a web page that displays a list of courses.
+The api returns 2 courses at a time with pagination links in the
+response header. We'd like your app to display things the same way.
+So 2 courses per page with next/prev links to get additional pages of
+courses. When you click on a course, we'd like to be taken to a page
+that displays all the details about that course.
+
+In order to access courses, you'll need to send an authorization token
+with your requests. The documentation at the above heroku link explains
+how to obtain a token.
+
+If you have time, you could also put an "Enroll" button on the individual
+course page, which could post to the enrollment endpoint.
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <h4>#3</h4>
+                    <pre>
+                        <code class="language-none">
+// Write a function that accepts a list of lists of integers as input and returns
+// a single list of integers which contains the result of merging the input lists.
+// In the returned list, the first integer should be the first integer from the
+// first list of integers, and the second should be the first item from the second
+// list of integers etc.
+//
+// Example:
+// input:
+// [[1, 2, 3],
+//  [4, 5],
+//  [12, -4, 7, 0, 10]]
+// function should return:
+// [1, 4, 12, 2, 5, -4, 3, 7, 0, 10]
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <h4>Some 'generic' technical questions:</h4>
+                    <ul>
+                        <li>Describe in <span class="emphasis">full detail</span> what happens behind the scenes when a user enters a URL in the address bar of a browser and hits 'Enter'. (This answer took a long time, and focused on things such as request headers, response codes, 'handshakes', https, how browsers handle multiple files being downloaded at the same time, benefits of CDNs, etc.)</li>
+                        <li>Using HTML, CSS, & JavaScript, code a red box with a button below it that, when pressed, it toggles the color of the box between red and blue.</li>
+                        <li>What is Cross-site scripting, and how can you prevent them?</li>
+                        <li>Where should data be sanatized? On the client side, before it gets to the database, or when it's being retreived by the client? Why?</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <!-- contact ryan -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="section-content">
+            <p>I'm all over the web, but if you're having trouble finding out more about me feel free to look here:
+              <ul class="social-list">
+                <li><a href="//twitter.com/chapeljuice" target="_blank" class="twitter">Twitter</a></li>
+                <li><a href="//www.linkedin.com/in/ryanchapel" target="_blank" class="linkedin">LinkedIn</a></li>
+                <li><a href="//github.com/chapeljuice" target="_blank" class="github">GitHub</a></li>
+                <li><a href="//plus.google.com/+RyanChapel?rel=author" target="_blank" class="googleplus">Google+</a></li>
+                <li><a href="//www.facebook.com/chapeljuice" target="_blank" class="facebook">Facebook</a></li>
+                <li><a href="//www.youtube.com/user/ChapelJuice" target="_blank" class="youtube">YouTube</a></li>
+              </ul>
+            </p>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2016 Ryan Chapel, ryanchapel.com. All rights reserved.</p>
+        <p>Social icons made by <a title="Freepik" href="//www.freepik.com" target="_blank">Freepik</a> from <a title="Flaticon" href="//www.flaticon.com">www.flaticon.com</a>.</p>
+      </footer>
+
+    </div><!-- /end .content -->
+    <!-- location of non-minified javascript:
+    <script src="js/scripts.js"></script>
+    -->
+    <script src="js/prism.js"></script>
+  </body>
+</html>
